@@ -26,7 +26,7 @@ namespace Project_EA.Models
         public string ProducerTitle { get; set; }
     }
 
-    public class BrokerInformationsDBContext :ApplicationDbContext
+    public class BrokerInformationDBContext :ApplicationDbContext
     {
         public DbSet<BrokerInformation> BrokerInformations { get; set; }
     }
