@@ -15,9 +15,17 @@ namespace Project_EA.Controllers
         private BrokerInformationDBContext db = new BrokerInformationDBContext();
 
         // GET: BrokerInformations
-        public ActionResult Index()
+        public ActionResult Index(string searchString)
         {
-            return View(db.BrokerInformations.ToList());
+            var firstName = from fn in db.BrokerInformations
+                         select fn;
+            
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                firstName = firstName.Where(s => s.FirstName.Contains(searchString));
+            }
+            
+            return View(firstName);
         }
 
         // GET: BrokerInformations/Details/5

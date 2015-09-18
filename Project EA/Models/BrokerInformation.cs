@@ -6,6 +6,7 @@ namespace Project_EA.Models
 {
     public class BrokerInformation
     {
+        
         public int ID { get; set; }
 
         public string FirstName { get; set; }
