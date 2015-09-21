@@ -7,13 +7,13 @@ namespace Project_EA.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class Initial : IMigrationMetadata
+    public sealed partial class ssntinMinandMax : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Initial));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(ssntinMinandMax));
         
         string IMigrationMetadata.Id
         {
-            get { return "201509211941268_Initial"; }
+            get { return "201509212153363_ssntinMinandMax"; }
         }
         
         string IMigrationMetadata.Source

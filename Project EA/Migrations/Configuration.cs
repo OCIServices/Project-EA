@@ -16,7 +16,7 @@ namespace Project_EA.Migrations
         protected override void Seed(Project_EA.Models.ProjectEADBContext context)
         {
             context.BrokerInformations.AddOrUpdate(i => i.EmailAddress,
-                new BrokerInformationModels
+                new BrokerInformation
                 {
                     FirstName = "Kenny",
                     LastName = "Peel",
@@ -24,6 +24,7 @@ namespace Project_EA.Migrations
                     Address2 = "Suite 310",
                     City = "Omaha",
                     State = "Nebraska",
+                    Zip = "68130",
                     PhoneNumber = "4023308700",
                     FaxNumber = "4023308706",
                     EmailAddress = "kpeel@ociservices.com",
@@ -35,7 +36,7 @@ namespace Project_EA.Migrations
                     ProducerTitle = "IT"
                 },
 
-                new BrokerInformationModels
+                new BrokerInformation
                 {
                     FirstName = "Sean",
                     LastName = "Peel",
@@ -43,6 +44,7 @@ namespace Project_EA.Migrations
                     Address2 = "Suite 310",
                     City = "Omaha",
                     State = "Nebraska",
+                    Zip = "68130",
                     PhoneNumber = "4023308700",
                     FaxNumber = "4023308706",
                     EmailAddress = "speel@ociservices.com",

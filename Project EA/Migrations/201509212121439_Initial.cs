@@ -27,7 +27,7 @@ namespace Project_EA.Migrations
                         NameOfGeneralAgent = c.String(),
                         Payee = c.String(),
                         PayeeTaxId = c.String(),
-                        SsnTin = c.String(),
+                        SsnTin = c.String(maxLength: 9),
                         BrokerCommissionSplitPercent = c.Int(nullable: false),
                         IsProducerAppointed = c.String(),
                         ProducerTitle = c.String(),
