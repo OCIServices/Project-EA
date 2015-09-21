@@ -4,7 +4,7 @@ using System.Data.Entity;
 
 namespace Project_EA.Models
 {
-    public class BrokerInformation
+    public class BrokerInformationModels
     {
         
         public int ID { get; set; }
@@ -55,6 +55,6 @@ namespace Project_EA.Models
 
     public class ProjectEADBContext :DbContext
     {
-        public DbSet<BrokerInformation> BrokerInformations { get; set; }
+        public DbSet<BrokerInformationModels> BrokerInformations { get; set; }
     }
 }

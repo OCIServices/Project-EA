@@ -35,7 +35,7 @@ namespace Project_EA.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            BrokerInformation brokerInformation = db.BrokerInformations.Find(id);
+            BrokerInformationModels brokerInformation = db.BrokerInformations.Find(id);
             if (brokerInformation == null)
             {
                 return HttpNotFound();
@@ -54,7 +54,7 @@ namespace Project_EA.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,FirstName,LastName,DOILicenseNumber,Address1,Address2,City,State,Zip,PhoneNumber,FaxNumber,EmailAddress,AgencyName,NameOfGeneralAgent,Payee,PayeeTaxId,SsnTin,BrokerCommissionSplitPercent,IsProducerAppointed,ProducerTitle")] BrokerInformation brokerInformation)
+        public ActionResult Create([Bind(Include = "ID,FirstName,LastName,DOILicenseNumber,Address1,Address2,City,State,Zip,PhoneNumber,FaxNumber,EmailAddress,AgencyName,NameOfGeneralAgent,Payee,PayeeTaxId,SsnTin,BrokerCommissionSplitPercent,IsProducerAppointed,ProducerTitle")] BrokerInformationModels brokerInformation)
         {
             if (ModelState.IsValid)
             {
@@ -73,7 +73,7 @@ namespace Project_EA.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            BrokerInformation brokerInformation = db.BrokerInformations.Find(id);
+            BrokerInformationModels brokerInformation = db.BrokerInformations.Find(id);
             if (brokerInformation == null)
             {
                 return HttpNotFound();
@@ -86,7 +86,7 @@ namespace Project_EA.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,FirstName,LastName,DOILicenseNumber,Address1,Address2,City,State,Zip,PhoneNumber,FaxNumber,EmailAddress,AgencyName,NameOfGeneralAgent,Payee,PayeeTaxId,SsnTin,BrokerCommissionSplitPercent,IsProducerAppointed,ProducerTitle")] BrokerInformation brokerInformation)
+        public ActionResult Edit([Bind(Include = "ID,FirstName,LastName,DOILicenseNumber,Address1,Address2,City,State,Zip,PhoneNumber,FaxNumber,EmailAddress,AgencyName,NameOfGeneralAgent,Payee,PayeeTaxId,SsnTin,BrokerCommissionSplitPercent,IsProducerAppointed,ProducerTitle")] BrokerInformationModels brokerInformation)
         {
             if (ModelState.IsValid)
             {
@@ -104,7 +104,7 @@ namespace Project_EA.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            BrokerInformation brokerInformation = db.BrokerInformations.Find(id);
+            BrokerInformationModels brokerInformation = db.BrokerInformations.Find(id);
             if (brokerInformation == null)
             {
                 return HttpNotFound();
@@ -117,7 +117,7 @@ namespace Project_EA.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            BrokerInformation brokerInformation = db.BrokerInformations.Find(id);
+            BrokerInformationModels brokerInformation = db.BrokerInformations.Find(id);
             db.BrokerInformations.Remove(brokerInformation);
             db.SaveChanges();
             return RedirectToAction("Index");

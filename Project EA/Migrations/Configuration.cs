@@ -16,7 +16,7 @@ namespace Project_EA.Migrations
         protected override void Seed(Project_EA.Models.ProjectEADBContext context)
         {
             context.BrokerInformations.AddOrUpdate(i => i.EmailAddress,
-                new BrokerInformation
+                new BrokerInformationModels
                 {
                     FirstName = "Kenny",
                     LastName = "Peel",
@@ -35,7 +35,7 @@ namespace Project_EA.Migrations
                     ProducerTitle = "IT"
                 },
 
-                new BrokerInformation
+                new BrokerInformationModels
                 {
                     FirstName = "Sean",
                     LastName = "Peel",
