@@ -6,14 +6,14 @@ namespace Project_EA.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<Project_EA.Models.BrokerInformationDBContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<Project_EA.Models.ProjectEADBContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(Project_EA.Models.BrokerInformationDBContext context)
+        protected override void Seed(Project_EA.Models.ProjectEADBContext context)
         {
             context.BrokerInformations.AddOrUpdate(i => i.EmailAddress,
                 new BrokerInformation

@@ -12,7 +12,7 @@ namespace Project_EA.Controllers
 {
     public class BrokerInformationsController : Controller
     {
-        private BrokerInformationDBContext db = new BrokerInformationDBContext();
+        private ProjectEADBContext db = new ProjectEADBContext();
 
         // GET: BrokerInformations
         public ActionResult Index(string searchString)
