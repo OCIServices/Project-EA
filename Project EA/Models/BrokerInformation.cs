@@ -53,7 +53,7 @@ namespace Project_EA.Models
 
     }
 
-    public class BrokerInformationDBContext :DbContext
+    public class ProjectEADBContext :DbContext
     {
         public DbSet<BrokerInformation> BrokerInformations { get; set; }
     }
