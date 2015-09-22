@@ -28,9 +28,8 @@ namespace Project_EA.Models
         [Required]
         public string State { get; set; }
 
-        [RegularExpression(@"/(^\d{5}(-\d{4})?)$/", ErrorMessage = "Not a Valid Zip Code")]
-        [DataType(DataType.PostalCode)]
         [Required]
+        [RegularExpression(@"^(\d{5}|\d{5}-\d{4})$", ErrorMessage = "Not a Valid Zip Code")]
         public string Zip { get; set; }
 
         [RegularExpression(@"^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$", ErrorMessage = "Not a valid Phone number")]
