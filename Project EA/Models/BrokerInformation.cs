@@ -29,6 +29,7 @@ namespace Project_EA.Models
         public string State { get; set; }
 
         [Required]
+        [DataType(DataType.PostalCode)]
         [RegularExpression(@"^(\d{5}|\d{5}-\d{4})$", ErrorMessage = "Not a Valid Zip Code")]
         public string Zip { get; set; }
 
