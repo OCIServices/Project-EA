@@ -20,6 +20,7 @@ namespace Project_EA.Migrations
                 {
                     FirstName = "Kenny",
                     LastName = "Peel",
+                    DOILicenseNumber = "123456789123456789",
                     Address1 = "17445 Arbor St",
                     Address2 = "Suite 310",
                     City = "Omaha",
@@ -28,6 +29,8 @@ namespace Project_EA.Migrations
                     PhoneNumber = "4023308700",
                     FaxNumber = "4023308706",
                     EmailAddress = "kpeel@ociservices.com",
+                    AgencyName = "OCi Services",
+                    NameOfGeneralAgent = "Kenny Peel",
                     Payee = "Kenny Peel",
                     PayeeTaxId = "123456789",
                     SsnTin = "123456789",
@@ -40,6 +43,7 @@ namespace Project_EA.Migrations
                 {
                     FirstName = "Sean",
                     LastName = "Peel",
+                    DOILicenseNumber = "1234567891234567890",
                     Address1 = "17445 Arbor St",
                     Address2 = "Suite 310",
                     City = "Omaha",
@@ -48,6 +52,8 @@ namespace Project_EA.Migrations
                     PhoneNumber = "4023308700",
                     FaxNumber = "4023308706",
                     EmailAddress = "speel@ociservices.com",
+                    AgencyName = "OCi Services",
+                    NameOfGeneralAgent = "Sean Peel",
                     Payee = "Sean Peel",
                     PayeeTaxId = "123456789",
                     SsnTin = "123456789",

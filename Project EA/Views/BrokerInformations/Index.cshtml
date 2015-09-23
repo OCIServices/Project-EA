@@ -145,13 +145,13 @@
                 </td>
 
                 <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.ID }, new { @class = "btn btn-success" })
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ID }, new { @role = "button", @class = "btn btn-default"})
                 </td>
                 <td>
-                    @Html.ActionLink("Details", "Details", new { id = item.ID }, new { @class = "btn btn-info" }) 
+                    @Html.ActionLink("Details", "Details", new { id = item.ID }, new { @role = "button", @class = "btn btn-info" }) 
                 </td>
                 <td>
-                    @Html.ActionLink("Delete", "Delete", new { id = item.ID }, new { @class = "btn btn-danger "})
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ID }, new { @role = "button", @class = "btn btn-danger "})
                 </td>
 
             </tr>
