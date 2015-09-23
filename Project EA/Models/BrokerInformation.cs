@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Data.Entity;
 
@@ -10,14 +11,18 @@ namespace Project_EA.Models
         public int ID { get; set; }
 
         [Required]
+        [DisplayName("First Name")]
         public string FirstName { get; set; }
 
         [Required]
+        [DisplayName("Last Name")]
         public string LastName { get; set; }
 
+        [DisplayName("DOI License Number")]
         public string DOILicenseNumber { get; set; }
 
         [Required]
+        [DisplayName("Address 1")]
         public string Address1 { get; set; }
 
         public string Address2 { get; set; }

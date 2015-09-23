@@ -18,8 +18,8 @@
     }
     </p>
 
-    <div class="table-condensed">
-        <table class="table table-striped">
+    <div class="table">
+        <table class="table table-hover">
             <tr>
                 <th>
                     @Html.DisplayNameFor(model => model.FirstName)
@@ -80,7 +80,9 @@
                 </th>
                 <th></th>
             </tr>
+        
 
+ 
         @foreach (var item in Model)
         {
             <tr>
@@ -141,14 +143,18 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.ProducerTitle)
                 </td>
-                
-                 <td>
-                   @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
-                   @Html.ActionLink("Details", "Details", new { id = item.ID }) |
-                   @Html.ActionLink("Delete", "Delete", new { id = item.ID })
-                 </td>
-                 
+
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ID }, new { @class = "btn btn-success" })
+                </td>
+                <td>
+                    @Html.ActionLink("Details", "Details", new { id = item.ID }, new { @class = "btn btn-info" }) 
+                </td>
+                <td>
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ID }, new { @class = "btn btn-danger "})
+                </td>
+
             </tr>
         }
-        </table>
+    </table>
 </div>
